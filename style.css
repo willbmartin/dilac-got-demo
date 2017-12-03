@@ -1,15 +1,61 @@
 body {
+	height: 90%;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
+.container:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('./media/westeros.jpg');
+  background-size:cover;
+  width: 110%;
+  height: 110%;
+  left: -5%;
+  top: -5%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.container {
+	width: 40%;
+	margin: 0 auto;
+}
+
+#sketch {
+	border: 5px solid white;
+}
+
+.icon {
+	width: 100px;
+	height: 100px;
+	padding: 0;
+	margin: 10px;
+	filter: grayscale(100%);
+}
+
+.icon:hover {
+	/*border: 10px solid white;*/
+	filter: grayscale(0%);
+}
+
 #infoBox {
 	margin: 0;
-	padding: 25;
-	size: 100,100;
+	padding: 0;
 	background-color: ivory;
 }
 
-video {
-	controls: true;
+h1 {
+	text-align: center;
+	color: white;
 }

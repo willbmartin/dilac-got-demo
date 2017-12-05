@@ -13,7 +13,12 @@ body {
   z-index: -1;
 
   display: block;
-  background-image: url('./media/westeros.jpg');
+  background:
+		linear-gradient(
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)
+		),
+		url('./media/westeros.jpg');
   background-size:cover;
   width: 110%;
   height: 110%;
@@ -28,8 +33,9 @@ body {
 }
 
 .container {
-	width: 40%;
+	width: 50%;
 	margin: 0 auto;
+	margin-top: 70px;
 }
 
 #sketch {
@@ -40,12 +46,12 @@ body {
 	width: 100px;
 	height: 100px;
 	padding: 0;
-	margin: 10px;
+	margin: 20px;
 	filter: grayscale(100%);
 }
 
 .icon:hover {
-	/*border: 10px solid white;*/
+	/* border: 10px solid white; */
 	filter: grayscale(0%);
 }
 
@@ -55,7 +61,14 @@ body {
 	background-color: ivory;
 }
 
-h1 {
+.title {
+	font-family: 'Spectral SC', serif;
+	font-size: 32px;
 	text-align: center;
 	color: white;
 }
+
+.icons {
+	padding-top: 20px;
+}
+
